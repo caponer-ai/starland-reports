@@ -192,12 +192,22 @@ h2{font-size:clamp(24px,3.2vw,46px);margin-bottom:.5em}
 }
 
 @media screen and (max-width:760px){
+  body{font-size:15.5px}
+  h1{font-size:31px}
+  h2{font-size:24px}
   .g4,.g3,.g2,.price,.faq,.vs,.steps,.band{grid-template-columns:1fr}
-  .split{flex-direction:column;align-items:flex-start}
-  .phone{width:100%}
+  .split{flex-direction:column;align-items:flex-start;gap:28px}
+  .phone{width:min(100%,360px);align-self:center}
+  .msg{font-size:.66em}
+  .tgkb span{font-size:.64em}
   .dots{display:none}
-  .slide{min-height:auto;padding-top:56px;padding-bottom:56px}
+  .slide{min-height:auto;padding-top:52px;padding-bottom:52px;overflow:visible}
   .plan.mid{transform:none}
+  .statrow{gap:12px}
+  .stat{min-width:0;flex:1 1 100%}
+  .chat{margin-bottom:2em}
+  .bigline{font-size:19px}
+  .foot{position:static;margin-top:2.4em}
 }
 @media print{
   @page{size:338.667mm 190.5mm;margin:0}
