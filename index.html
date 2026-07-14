@@ -164,6 +164,12 @@ h2{font-size:clamp(24px,3.2vw,46px);margin-bottom:.5em}
 
 .badge{display:inline-block;font-size:.68em;font-weight:800;letter-spacing:.16em;text-transform:uppercase;border:1px solid var(--line-gold);color:var(--gold-soft);border-radius:30px;padding:.55em 1.2em;margin-bottom:2.2em}
 
+/* міні-статистика на слайді продукту */
+.statrow{display:flex;gap:clamp(12px,1.8vw,26px);margin-top:2.6em;flex-wrap:wrap}
+.stat{border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:1.1em 1.5em;background:rgba(255,255,255,.05);min-width:200px}
+.stat b{display:block;font-family:var(--disp);font-size:1.45em;font-weight:800;color:var(--gold-soft);margin-bottom:.2em}
+.stat span{font-size:.74em;opacity:.72}
+
 .bigline{font-family:var(--disp);font-size:clamp(18px,2vw,28px);margin-top:1.2em;color:var(--gold-soft)}
 .light .bigline{color:#8a6420}
 
@@ -211,16 +217,31 @@ h2{font-size:clamp(24px,3.2vw,46px);margin-bottom:.5em}
 }
 </style>
 
-<!-- 1 · ОБКЛАДИНКА -->
-<section class="slide dark" id="s1">
+<!-- 1 · ОФЕР -->
+<section class="slide dark" id="s0">
   <div class="stars"></div>
-  <div class="chat rv">
+  <p class="kicker rv">Пропозиція для гімназії StarLand · Рівне · старт 1 вересня</p>
+  <div class="chat rv" style="margin-bottom:2.2em">
     <div class="bub q">— Як справи у твоїй новій гімназії?</div>
     <div class="bub a">— Все супер!<small>…і це вся інформація за день з 08:00 до 19:00</small></div>
   </div>
-  <h1 class="rv">Батьки бачать день дитини.<br>Не просто <span class="gold">«все супер»</span>.</h1>
-  <p class="lead rv" style="margin-top:1.4em">StarLand Reports — персональні щотижневі звіти про кожну дитину в Telegram. 15 секунд роботи для вчителя, преміальний сервіс для родини, репутація прозорості для гімназії.</p>
-  <div class="rv" style="margin-top:2.6em"><span class="badge" style="margin:0">Пропозиція для гімназії StarLand · Рівне · старт 1 вересня</span></div>
+  <h1 class="rv">Дитинство не повторюють <span class="gold">на біс</span>.</h1>
+  <p class="lead rv" style="margin-top:1.2em">11 годин на день воно відбувається у вас — а батьки чують лише «все супер». StarLand Reports щоп'ятниці повертає родинам відчуття, що вони нічого не пропустили. А гімназії — батьків, які точно знають, за що платять.</p>
+  <p class="bigline rv">Батьки заслуговують знати не лише оцінки.<br>Вони заслуговують не пропустити дитинство.</p>
+  <div class="foot"><span><span class="star">✦</span> STARLAND REPORTS</span><span class="pg"></span></div>
+</section>
+
+<!-- 2 · ЗНАЙОМСТВО З ПРОДУКТОМ -->
+<section class="slide dark" id="s1">
+  <div class="stars"></div>
+  <p class="kicker rv">Рішення</p>
+  <h1 class="rv">Знайомтесь: <span class="gold">StarLand Reports</span></h1>
+  <p class="lead rv" style="margin-top:1.2em">Персональні щотижневі звіти про кожну дитину в Telegram — написані AI турботливою людською мовою і підтверджені педагогом перед відправкою.</p>
+  <div class="statrow rv">
+    <div class="stat"><b>20 секунд</b><span>на дитину — вся робота вчителя</span></div>
+    <div class="stat"><b>П'ятниця, 17:00</b><span>особистий звіт кожній родині</span></div>
+    <div class="stat"><b>Нуль додатків</b><span>звичайний Telegram, кнопка «Старт»</span></div>
+  </div>
   <div class="foot"><span><span class="star">✦</span> STARLAND REPORTS</span><span class="pg"></span></div>
 </section>
 
@@ -473,7 +494,8 @@ h2{font-size:clamp(24px,3.2vw,46px);margin-bottom:.5em}
     <div class="q" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12)"><h3>Дані дітей у безпеці?</h3><p>Закритий контур: доступ має лише школа, дані не передаються третім сторонам і не використовуються для навчання публічних моделей.</p></div>
   </div>
   <div class="rv" style="text-align:center;margin-top:1em">
-    <a class="cta" href="#">✦ Зарезервувати запуск на серпень</a>
+    <p class="bigline" style="margin:0 0 .9em;font-size:clamp(16px,1.6vw,24px)">Батьки ваших учнів заслуговують знати не лише оцінки — і не пропустити дитинство.</p>
+    <a class="cta" href="#" style="margin-top:.4em">✦ Зарезервувати запуск на серпень</a>
     <p class="note">Ціна фіксується до 1 серпня. Перша п'ятниця вересня — перший вау-звіт для ваших родин.</p>
   </div>
   <div class="foot"><span><span class="star">✦</span> STARLAND REPORTS</span><span class="pg"></span></div>
